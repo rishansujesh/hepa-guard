@@ -1,0 +1,21 @@
+{
+  "overall": {
+    "total_rows": 9693,
+    "labeled_rows": 3892,
+    "positive_rate": 0.3725590955806783
+  },
+  "splits": {
+    "train": {
+      "rows": 2724,
+      "positive_rate": 0.37261380323054333
+    },
+    "val": {
+      "rows": 584,
+      "positive_rate": 0.3732876712328767
+    },
+    "test": {
+      "rows": 584,
+      "positive_rate": 0.3715753424657534
+    }
+  }
+}

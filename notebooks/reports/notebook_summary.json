@@ -1,0 +1,194 @@
+{
+  "core": {
+    "feature_set": "core",
+    "n_train": 2724,
+    "n_val": 584,
+    "n_test": 584,
+    "logreg": {
+      "auroc": 0.8880322455078542,
+      "pr_auc": 0.8237698353070735,
+      "recall": 0.8110599078341014,
+      "precision": 0.6875,
+      "f1": 0.7441860465116279,
+      "brier": 0.13366254946906764,
+      "confusion_matrix": [
+        [
+          287,
+          80
+        ],
+        [
+          41,
+          176
+        ]
+      ],
+      "threshold": 0.47400000000000003
+    },
+    "rf": {
+      "auroc": 0.898385213274903,
+      "pr_auc": 0.8519361591298462,
+      "recall": 0.8248847926267281,
+      "precision": 0.69921875,
+      "f1": 0.7568710359408034,
+      "brier": 0.1242375,
+      "confusion_matrix": [
+        [
+          290,
+          77
+        ],
+        [
+          38,
+          179
+        ]
+      ],
+      "threshold": 0.34400000000000003
+    },
+    "xgb": {
+      "auroc": 0.8871909491580758,
+      "pr_auc": 0.8195250781635149,
+      "recall": 0.847926267281106,
+      "precision": 0.696969696969697,
+      "f1": 0.7650727650727651,
+      "brier": 0.13500908017158508,
+      "confusion_matrix": [
+        [
+          287,
+          80
+        ],
+        [
+          33,
+          184
+        ]
+      ],
+      "threshold": 0.31
+    }
+  },
+  "enhanced": {
+    "feature_set": "enhanced",
+    "n_train": 2724,
+    "n_val": 584,
+    "n_test": 584,
+    "logreg": {
+      "auroc": 0.9052097590376573,
+      "pr_auc": 0.8519959836767661,
+      "recall": 0.8387096774193549,
+      "precision": 0.7137254901960784,
+      "f1": 0.7711864406779662,
+      "brier": 0.12100613006523013,
+      "confusion_matrix": [
+        [
+          294,
+          73
+        ],
+        [
+          35,
+          182
+        ]
+      ],
+      "threshold": 0.446
+    },
+    "rf": {
+      "auroc": 0.9183189140998755,
+      "pr_auc": 0.879325638733003,
+      "recall": 0.8755760368663594,
+      "precision": 0.6959706959706959,
+      "f1": 0.7755102040816326,
+      "brier": 0.11206871232876711,
+      "confusion_matrix": [
+        [
+          284,
+          83
+        ],
+        [
+          27,
+          190
+        ]
+      ],
+      "threshold": 0.28600000000000003
+    },
+    "xgb": {
+      "auroc": 0.9211943896834465,
+      "pr_auc": 0.885339921648635,
+      "recall": 0.8341013824884793,
+      "precision": 0.7448559670781894,
+      "f1": 0.7869565217391304,
+      "brier": 0.11225835978984833,
+      "confusion_matrix": [
+        [
+          305,
+          62
+        ],
+        [
+          36,
+          181
+        ]
+      ],
+      "threshold": 0.34400000000000003
+    }
+  },
+  "core_shap_top": [
+    {
+      "feature": "alt_u_l",
+      "mean_abs_shap": 1.4421868324279785
+    },
+    {
+      "feature": "waist_cm",
+      "mean_abs_shap": 1.3767261505126953
+    },
+    {
+      "feature": "age_years",
+      "mean_abs_shap": 0.8306276798248291
+    },
+    {
+      "feature": "bmi",
+      "mean_abs_shap": 0.7347986102104187
+    },
+    {
+      "feature": "hdl_mg_dl",
+      "mean_abs_shap": 0.5782350301742554
+    },
+    {
+      "feature": "ast_u_l",
+      "mean_abs_shap": 0.5148656964302063
+    },
+    {
+      "feature": "platelets_1000cells_ul",
+      "mean_abs_shap": 0.32958316802978516
+    },
+    {
+      "feature": "sex_code",
+      "mean_abs_shap": 0.23494747281074524
+    },
+    {
+      "feature": "sedentary_min_per_day",
+      "mean_abs_shap": 0.2212141752243042
+    },
+    {
+      "feature": "alcohol_drinks_per_day",
+      "mean_abs_shap": 0.13701103627681732
+    },
+    {
+      "feature": "alcohol_drinks_per_day_missing",
+      "mean_abs_shap": 0.03619549050927162
+    },
+    {
+      "feature": "ast_u_l_missing",
+      "mean_abs_shap": 0.008394588716328144
+    },
+    {
+      "feature": "bmi_missing",
+      "mean_abs_shap": 0.0
+    },
+    {
+      "feature": "platelets_1000cells_ul_missing",
+      "mean_abs_shap": 0.0
+    },
+    {
+      "feature": "hdl_mg_dl_missing",
+      "mean_abs_shap": 0.0
+    },
+    {
+      "feature": "sedentary_min_per_day_missing",
+      "mean_abs_shap": 0.0
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "threshold_used": 0.41000000000000003,
+  "min_recall": 0.85,
+  "selection_method": "max_f1_given_recall"
+}

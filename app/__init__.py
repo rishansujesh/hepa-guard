@@ -1,0 +1,1 @@
+"""HepaGuard FastAPI app package."""

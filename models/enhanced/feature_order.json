@@ -1,0 +1,23 @@
+{
+  "feature_order": [
+    "age_years",
+    "sex_code",
+    "bmi",
+    "waist_cm",
+    "alt_u_l",
+    "ast_u_l",
+    "platelets_1000cells_ul",
+    "hdl_mg_dl",
+    "alcohol_drinks_per_day",
+    "sedentary_min_per_day",
+    "fasting_glucose_mg_dl",
+    "triglycerides_mg_dl",
+    "bmi_missing",
+    "ast_u_l_missing",
+    "platelets_1000cells_ul_missing",
+    "hdl_mg_dl_missing",
+    "alcohol_drinks_per_day_missing",
+    "sedentary_min_per_day_missing",
+    "triglycerides_mg_dl_missing"
+  ]
+}

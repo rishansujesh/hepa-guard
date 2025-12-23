@@ -1,0 +1,17 @@
+feature,mean_abs_shap
+alt_u_l,1.2627542
+waist_cm,1.2102666
+age_years,0.729768
+bmi,0.64210063
+hdl_mg_dl,0.48545623
+ast_u_l,0.4577564
+platelets_1000cells_ul,0.26433924
+sex_code,0.19515012
+sedentary_min_per_day,0.17321494
+alcohol_drinks_per_day,0.08734053
+alcohol_drinks_per_day_missing,0.032024425
+ast_u_l_missing,0.0054839076
+bmi_missing,0.0
+platelets_1000cells_ul_missing,0.0
+hdl_mg_dl_missing,0.0
+sedentary_min_per_day_missing,0.0

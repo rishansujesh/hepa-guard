@@ -1,0 +1,50 @@
+{
+  "strategy": "median",
+  "add_indicator": true,
+  "base_features": [
+    "age_years",
+    "sex_code",
+    "bmi",
+    "waist_cm",
+    "alt_u_l",
+    "ast_u_l",
+    "platelets_1000cells_ul",
+    "hdl_mg_dl",
+    "alcohol_drinks_per_day",
+    "sedentary_min_per_day",
+    "fasting_glucose_mg_dl",
+    "triglycerides_mg_dl"
+  ],
+  "medians": {
+    "age_years": 51.0,
+    "sex_code": 2.0,
+    "bmi": 28.6,
+    "waist_cm": 99.0,
+    "alt_u_l": 18.0,
+    "ast_u_l": 19.0,
+    "platelets_1000cells_ul": 233.0,
+    "hdl_mg_dl": 51.0,
+    "alcohol_drinks_per_day": 1.0,
+    "sedentary_min_per_day": 300.0,
+    "fasting_glucose_mg_dl": 103.0,
+    "triglycerides_mg_dl": 88.0
+  },
+  "indicator_indices": [
+    2,
+    5,
+    6,
+    7,
+    8,
+    9,
+    11
+  ],
+  "indicator_features": [
+    "bmi_missing",
+    "ast_u_l_missing",
+    "platelets_1000cells_ul_missing",
+    "hdl_mg_dl_missing",
+    "alcohol_drinks_per_day_missing",
+    "sedentary_min_per_day_missing",
+    "triglycerides_mg_dl_missing"
+  ]
+}

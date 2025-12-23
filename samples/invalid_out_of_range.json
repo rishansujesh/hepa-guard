@@ -1,0 +1,24 @@
+{
+  "request_id": "core-invalid-001",
+  "patient": {
+    "age_years": 46,
+    "sex": "female",
+    "bmi_kg_m2": 26.5,
+    "waist_cm": 88.0
+  },
+  "labs": {
+    "alt_u_l": 5000,
+    "ast_u_l": 22,
+    "platelets_10e3_per_uL": 240,
+    "hdl_mg_dl": 58
+  },
+  "lifestyle": {
+    "alcohol_drinks_per_day": 0.3,
+    "sedentary_min_per_day": 300
+  },
+  "meta": {
+    "fasting_state": "unknown",
+    "units_version": "v1",
+    "model_preference": "auto"
+  }
+}
