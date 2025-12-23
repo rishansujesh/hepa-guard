@@ -1,0 +1,10 @@
+name: hepaguard-inference
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+      - azureml-inference-server-http
+      - xgboost
+      - numpy

@@ -65,6 +65,22 @@ class HepaGuardRiskResponse(BaseModel):
     disclaimer: str
 
 
+class RecommendationsRequest(BaseModel):
+    request_id: Optional[str] = None
+    patient: PatientInfo
+    labs: LabsInfo
+    lifestyle: LifestyleInfo
+    meta: Optional[MetaInfo] = None
+
+
+class RecommendationsResponse(BaseModel):
+    request_id: Optional[str] = None
+    guideline_next_steps: str
+    citations: List[str]
+    warnings: List[str]
+    disclaimer: str
+
+
 class ValidationIssue(BaseModel):
     field: str
     issue: str

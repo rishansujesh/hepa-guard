@@ -1,0 +1,38 @@
+[
+  {
+    "doc_id": "aasld-nafld-guidance-2023",
+    "title": "AASLD Practice Guidance on the clinical assessment and management of NAFLD",
+    "year": "2023",
+    "source": "AASLD",
+    "path": "rag_docs/processed/aasld-nafld-guidance-2023.md",
+    "raw_path": "rag_docs/raw/aasld_2023_practice_guidance_nafld.pdf",
+    "notes": "Full-text PDF downloaded (free). Convert to processed markdown for chunking."
+  },
+  {
+    "doc_id": "masld-nomenclature-delphi-2023",
+    "title": "A multi-society Delphi consensus statement on new nomenclature for metabolic dysfunction-associated steatotic liver disease (MASLD) and metabolic dysfunction-associated steatohepatitis (MASH)",
+    "year": "2023",
+    "source": "AASLD",
+    "path": "rag_docs/processed/masld-nomenclature-delphi-2023.md",
+    "raw_path": "rag_docs/raw/masld_nomenclature_delphi_2023.pdf",
+    "notes": "Nomenclature + definitions anchor for MASLD/MetALD framing. Convert PDF to markdown."
+  },
+  {
+    "doc_id": "kanwal-masld-update-2024",
+    "title": "Metabolic dysfunction-associated steatotic liver disease (MASLD): Updated nomenclature and impact on clinical practice",
+    "year": "2024",
+    "source": "AASLD",
+    "path": "rag_docs/processed/kanwal_masld_update_2024.md",
+    "raw_path": "rag_docs/raw/kanwal_masld_update_2024.pdf",
+    "notes": "Bridge document aligning NAFLD guidance to MASLD/MetALD terminology. Convert PDF to markdown."
+  },
+  {
+    "doc_id": "aasld-masld-decision-tree-2023",
+    "title": "AASLD MASLD Decision Tree",
+    "year": "2023",
+    "source": "AASLD",
+    "path": "rag_docs/processed/aasld-masld-decision-tree-2023.md",
+    "raw_path": "rag_docs/raw/aasld_masld_decision_tree_2023.pdf",
+    "notes": "Decision tree is largely figure-based; recommend manual transcription into the processed .md for reliable retrieval/citations. Keep the original PDF in rag_docs/raw."
+  }
+]

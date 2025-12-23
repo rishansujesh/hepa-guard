@@ -10,7 +10,14 @@ from app.inference.explain import top_factors
 from app.inference.featurize import build_model_vector, map_request_to_base_features
 from app.inference.predict import bin_risk, predict_proba
 from app.inference.units import convert_request_units
-from app.schemas import HepaGuardRiskRequest, HepaGuardRiskResponse, ValidationErrorResponse
+from app.recommendations.service import generate_recommendations
+from app.schemas import (
+    HepaGuardRiskRequest,
+    HepaGuardRiskResponse,
+    RecommendationsRequest,
+    RecommendationsResponse,
+    ValidationErrorResponse,
+)
 
 app = FastAPI(title="HepaGuard Inference API", version="v1")
 
@@ -232,6 +239,36 @@ def predict(req: HepaGuardRiskRequest):
         top_factors=factors,
         guideline_next_steps=None,
         citations=[],
+        warnings=warnings,
+        disclaimer=DISCLAIMER,
+    )
+    return response
+
+
+@app.post("/recommendations")
+def recommendations(req: RecommendationsRequest):
+    # units_version controls conversion to canonical model units before validation.
+    req, unit_warnings = convert_request_units(req)
+
+    errors = _validate_ranges(req)
+    if errors:
+        payload = ValidationErrorResponse(
+            error="validation_error",
+            message="One or more fields are missing or out of allowed range.",
+            validation_errors=errors,
+        )
+        return JSONResponse(status_code=400, content=payload.model_dump())
+
+    guideline_text, citations, rec_warnings = generate_recommendations(
+        req.patient, req.labs, req.lifestyle, req.meta
+    )
+    warnings = list(unit_warnings)
+    warnings.extend(rec_warnings)
+
+    response = RecommendationsResponse(
+        request_id=req.request_id,
+        guideline_next_steps=guideline_text,
+        citations=citations,
         warnings=warnings,
         disclaimer=DISCLAIMER,
     )
